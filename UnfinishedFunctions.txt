@@ -3,11 +3,23 @@ Neighborhood.py
     getPerson
 
 Person.py
-flirtRequest
-recieveFlirtResponse
-chatRequest
-recieveChatResponse
-shareMealRequest
-recieveshareMealResponse
-reproduceRequest
-recieveReproduceResponse
+    flirtRequest
+    recieveFlirtResponse
+    chatRequest
+    recieveChatResponse
+    shareMealRequest
+    recieveShareMealResponse
+    reproduceRequest
+    recieveReproduceResponse
+    shareDrinkRequest
+    recieveShareDrinkResponse
+    playGameRequest
+    recievePlayGameResponse
+    fightingWith
+    fightResponse
+    askForFood
+    askForFoodResponse
+    askForWater
+    askForWaterResponse
+    askForCash
+    askForCashResponse

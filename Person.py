@@ -129,7 +129,7 @@ class Person():
         #potentially request food
         return (1, 2, 3)
         
-    def recieveshareMealResponse(self, response):
+    def recieveShareMealResponse(self, response):
         #compiler placeholder
         1 + 1
         
@@ -139,5 +139,54 @@ class Person():
         return (1, 2, 3)
         
     def recieveReproduceResponse(self, response):
+        #compiler placeholder
+        1 + 1
+        
+    def shareDrinkRequest(self, initiator):
+        #compiler placeholder
+        #potentially request food
+        return (1, 2, 3)
+        
+    def recieveShareDrinkResponse(self, response):
+        #compiler placeholder
+        1 + 1
+
+    def playGameRequest(self, initiatorSSN):
+        #compiler placeholder
+        return (1, 2, 3)
+        
+    def recievePlayGameResponse(self, response):
+        #compiler placeholder
+        1 + 1
+        
+    def fightingWith(self, initiatorSSN):
+        #compiler placeholder
+        return (1, 2, 3)
+        
+    def fightResponse(self, response):
+        #compiler placeholder
+        1 + 1
+        
+    def askForFood(self, initiatorSSN):
+        #compiler placeholder
+        return (1, 2, 3)
+        
+    def askForFoodResponse(self, response):
+        #compiler placeholder
+        1 + 1
+        
+    def askForWater(self, initiatorSSN):
+        #compiler placeholder
+        return (1, 2, 3)
+        
+    def askForWaterResponse(self, response):
+        #compiler placeholder
+        1 + 1
+        
+    def askForCash(self, initiatorSSN):
+        #compiler placeholder
+        return (1, 2, 3)
+        
+    def askForCashResponse(self, response):
         #compiler placeholder
         1 + 1

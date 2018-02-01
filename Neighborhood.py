@@ -62,17 +62,32 @@ class Map():
         #--8--ask for water
         #--9--ask for cash
         corresponder = self.getPerson(corresponderID)
-        for i in topics
-            if i.topic is 0
-                initiator.recieveFlirtResponse(reciever.flirtRequest(initiator.ssn))
-            elif i.topic is 1
-                initiator.recieveChatResponse(reciever.chatRequest(initiator.ssn))
-            elif i.topic is 2:
+        for i in topics:
+            if i.topic == 0:
+                initiator.recieveFlirtResponse(corresponder.flirtRequest(initiator.ssn))
+            elif i.topic == 1:
+                initiator.recieveChatResponse(corresponder.chatRequest(initiator.ssn))
+            elif i.topic == 2:
                 #send full initiator in case of food request
-                initiator.recieveshareMealResponse(reciever.shareMealRequest(initiator))
-            elif i.topic is 3:
+                initiator.recieveShareMealResponse(corresponder.shareMealRequest(initiator))
+            elif i.topic == 3:
                 #full initiator in case flirt/chat request
-                initiator.recieveReproduceResponse(reciever.reproduceRequest(initiator))
+                initiator.recieveReproduceResponse(corresponder.reproduceRequest(initiator))
+            elif i.topic == 4:
+                #send full initiator in case of water request
+                initiator.recieveShareDrinkResponse(corresponder.shareDrinkRequest(initiator))
+            elif i.topic == 5:
+                initiator.recievePlayGameResponse(corresponder.playGameRequest(initiator.ssn))
+            elif i.topic == 6:
+                initiator.fightResponse(corresponder.fightingWith(initiator.ssn))
+            elif i.topic == 7:
+                initiator.askForFoodResponse(corresponder.askForFood(initiator.ssn))
+            elif i.topic == 8:
+                initiator.askForWaterResponse(corresponder.askForWater(initiator.ssn))
+            elif i.topic == 9:                
+                initiator.askForCashResponse(corresponder.askForCash(initiator.ssn))
+            
+                
     def getPerson(self, id):
         
         #placeholder for compiler        
